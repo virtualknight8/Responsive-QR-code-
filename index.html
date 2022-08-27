@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      * {
+  box-sizing: border-box;
+}
+
+      body{
+          background-color: hsl(212, 45%, 89%);
+         
+      }
+      div.container{
+          position: relative;
+          top:20vh;
+          left: 40vw;
+          background-color: white;
+          max-width: 17%;
+          border-radius: 15px;
+          
+      }
+      img{
+          margin: 6%;
+          border-radius: 15px;
+      }
+      p{
+          white-space: nowrap;
+          text-align: center;
+          font-family: "Outfit" , sans-serif;
+      }
+      p.first{
+        font-size: 1.2vw;  
+          text-align:center;
+          font-weight: 900;
+      }
+      
+     p.second{
+          font-size: 1.02vw;
+          text-align-last: center;
+          color:  hsl(220, 15%, 55%);
+      }
+      
+      @media only screen and (max-width:375px){
+          
+          
+      
+          
+          p.second{
+          font-size: 3vw;
+          
+      }
+           p.first{
+        font-size: 4vw; 
+          }
+          div.container{
+          max-width: 80%;      
+          top:20vh;
+          left:10vw;
+        
+      }
+      }
+          @media only screen and (min-width:375px){
+              
+    
+              p.second{
+          font-size: 2vw;
+          
+      }
+           p.first{
+        font-size: 2.5vw; 
+          }
+          div.container{
+          max-width: 40%;      
+          top:18vh;
+          left:30vw;
+        
+      }
+      }
+              @media only screen and (min-width:720px){
+      
+                  
+          p.second{
+          font-size: 1.02vw;
+          
+      }
+           p.first{
+               
+        font-size: 1.2vw; 
+               
+          }
+                  
+          div.container{
+          top:20vh;
+          left: 40vw;
+          max-width: 17%;
+              
+              }
+              
+          }
+    
+  </style>
+</head>
+<body>
+    <div class="container">
+   
+<div class="main">
+    <img src="images/image-qr-code.png" alt="kuch bhi" style="min-height:auto; width: 88%;">
+    <p class="first">Improve your front-end<br>skills by building projects</p>
+    <p class="second">Scan the QR code to visit Frontend<br>
+    Mentor and take your coding skills to<br>the  next level</p></div>
+        </div>
+</body>
+</html>
